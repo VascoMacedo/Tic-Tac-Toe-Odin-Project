@@ -1,5 +1,5 @@
 function DashBoard() {
-  this.board = [00, 01, 02, 
+  this.board = [0, 0, 0, 
                 10, 11, 12,
                 20, 21, 22];
                 
@@ -11,6 +11,14 @@ function DashBoard() {
 function FlowController() {
   this.stillGoing = true;
   this.player1Turn = true;
+
+  this.checkWinConditions = function(dashBoard) {
+    switch(dashBoard.board[0] == dashBoard.board[1] && dashBoard.board[0] == dashBoard.board[2]) {
+      case true:
+        console.log("SWTCH CASE TEST WORKED!!!");
+        break;
+    }
+  }
 
   this.gameFlow = function(){
     if(this.stillGoing && this.player1Turn){
@@ -35,8 +43,12 @@ function FlowController() {
 
 
 dashBoard = new DashBoard();
+flowController = new FlowController();
+
 
 console.log(dashBoard.board);
 
 dashBoard.changeBoard(2);
 dashBoard.changeBoard(3);
+
+flowController.FlowController(dashBoard);
