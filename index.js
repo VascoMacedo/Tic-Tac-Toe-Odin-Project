@@ -1,7 +1,7 @@
 function DashBoard() {
-  this.board = [0, 0, 0, 
-                10, 11, 12,
-                20, 21, 22];
+  this.board = [1, 1, 1, 
+                2, 1, 2,
+                1, 1, 3];
                 
   this.changeBoard = function(index){ 
     console.log(this.board[index]);
@@ -12,11 +12,35 @@ function FlowController() {
   this.stillGoing = true;
   this.player1Turn = true;
 
-  this.checkWinConditions = function(dashBoard) {
-    switch(dashBoard.board[0] == dashBoard.board[1] && dashBoard.board[0] == dashBoard.board[2]) {
-      case true:
-        console.log("SWTCH CASE TEST WORKED!!!");
-        break;
+  this.checkWinConditions = function(dashBoard) {    
+    //Check Horizontal Lines
+    if(dashBoard.board[0] == dashBoard.board[1] && dashBoard.board[0] == dashBoard.board[2]){
+      console.log("FIRST HORIZONTAL IF CASE TEST WORKED!!!");
+    }
+    if(dashBoard.board[3] == dashBoard.board[4] && dashBoard.board[3] == dashBoard.board[5]){
+      console.log("2 HORIZONTAL IF CASE TEST WORKED!!!");
+    }
+    if(dashBoard.board[6] == dashBoard.board[7] && dashBoard.board[6] == dashBoard.board[8]){
+      console.log("3 HORIZONTAL IF CASE TEST WORKED!!!");
+    }
+
+    //Check Vertical Lines
+    if(dashBoard.board[0] == dashBoard.board[3] && dashBoard.board[0] == dashBoard.board[6]){
+      console.log("FIRST VERTICAL IF CASE TEST WORKED!!!");
+    }
+    if(dashBoard.board[1] == dashBoard.board[4] && dashBoard.board[1] == dashBoard.board[7]){
+      console.log("2 VERTICAL IF CASE TEST WORKED!!!");
+    }
+    if(dashBoard.board[2] == dashBoard.board[5] && dashBoard.board[2] == dashBoard.board[8]){
+      console.log("3 VERTICAL IF CASE TEST WORKED!!!");
+    }
+
+    //Check Diagonal Lines
+    if(dashBoard.board[0] == dashBoard.board[4] && dashBoard.board[0] == dashBoard.board[8]){
+      console.log("FIRST DIAGONAL IF CASE TEST WORKED!!!");
+    }
+    if(dashBoard.board[2] == dashBoard.board[4] && dashBoard.board[2] == dashBoard.board[6]){
+      console.log("2 DIAGONAL IF CASE TEST WORKED!!!");
     }
   }
 
@@ -51,4 +75,4 @@ console.log(dashBoard.board);
 dashBoard.changeBoard(2);
 dashBoard.changeBoard(3);
 
-flowController.FlowController(dashBoard);
+flowController.checkWinConditions(dashBoard);

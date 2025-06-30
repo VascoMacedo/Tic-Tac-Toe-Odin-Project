@@ -24,4 +24,7 @@ body {
 .container div {
   background-color: blueviolet;
   border: 5px solid red;
+  color: white;
+  font-size: 200px;
+  text-align: center;  
 }
