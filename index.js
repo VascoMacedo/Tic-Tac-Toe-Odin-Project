@@ -1,10 +1,10 @@
 function DashBoard() {
-  this.board = [1, 1, 0, 
+  this.board = [0, 1, 0, 
                 2, 1, 2,
                 1, 0, 3];
                 
   this.changeBoard = function(index, flowController){ 
-    console.log(this.board[index]);
+    //console.log(this.board[index]);
     if(flowController.player1Turn == true){
       this.board[index] = 1;
     }else{
@@ -104,9 +104,19 @@ console.log(dashBoard.board);
 //ALTERNATE UNIVERSE
 console.log(`Player 1 turn: ${flowController.player1Turn}`);
 dashBoard.changeBoard(8, flowController);
-console.log(`Player 1 turn: ${flowController.player1Turn}`);
-dashBoard.changeBoard(4, flowController);
-console.log(`Player 1 turn: ${flowController.player1Turn}`);
-
 flowController.checkWinConditions(dashBoard);
+console.log(dashBoard.board);
+console.log("-----------------------------------");
+
+console.log(`Player 1 turn: ${flowController.player1Turn}`);
+dashBoard.changeBoard(3, flowController);
+flowController.checkWinConditions(dashBoard);
+console.log(dashBoard.board);
+console.log("-----------------------------------");
+
+console.log(`Player 1 turn: ${flowController.player1Turn}`);
+dashBoard.changeBoard(0, flowController);
+flowController.checkWinConditions(dashBoard);
+console.log(dashBoard.board);
+console.log("-----------------------------------");
 
