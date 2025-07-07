@@ -1,7 +1,13 @@
 function DashBoard() {
+  /*
   this.board = [0, 1, 0, 
                 2, 1, 2,
                 1, 0, 3];
+  */              
+
+  this.board = [0, 1, 2, 
+                3, 4, 5,
+                6, 7, 8];
                 
   this.changeBoard = function(index, flowController){ 
     //console.log(this.board[index]);
@@ -101,7 +107,7 @@ console.log(dashBoard.board);
 //dashBoard.changeBoard(2, flowController);
 //dashBoard.changeBoard(3, flowController);
 
-//ALTERNATE UNIVERSE
+/*ALTERNATE UNIVERSE - OLD TEST
 console.log(`Player 1 turn: ${flowController.player1Turn}`);
 dashBoard.changeBoard(8, flowController);
 flowController.checkWinConditions(dashBoard);
@@ -119,7 +125,7 @@ dashBoard.changeBoard(0, flowController);
 flowController.checkWinConditions(dashBoard);
 console.log(dashBoard.board);
 console.log("-----------------------------------");
-
+*/
 
 const myDiv0 = document.querySelector('#div0');
 const myDiv1 = document.querySelector('#div1');
@@ -135,52 +141,160 @@ const myDiv8 = document.querySelector('#div8');
 myDiv0.addEventListener('click', function() {
   // specify the action to take when the div is clicked
   console.log('Div 0 was clicked!');
+
+  if(flowController.player1Turn == true){
+    myDiv0.innerHTML = "1";
+  }else{
+    myDiv0.innerHTML = "2";
+  }
+
+  console.log(`Player 1 turn: ${flowController.player1Turn}`);
+  dashBoard.changeBoard(0, flowController);
+  flowController.checkWinConditions(dashBoard);
+  console.log(dashBoard.board);
+  console.log("-----------------------------------");
 });
 
 // add a click event listener to the div
 myDiv1.addEventListener('click', function() {
   // specify the action to take when the div is clicked
   console.log('Div 1 was clicked!');
+
+  if(flowController.player1Turn == true){
+    myDiv1.innerHTML = "1";
+  }else{
+    myDiv1.innerHTML = "2";
+  }
+
+  console.log(`Player 1 turn: ${flowController.player1Turn}`);
+  dashBoard.changeBoard(1, flowController);
+  flowController.checkWinConditions(dashBoard);
+  console.log(dashBoard.board);
+  console.log("-----------------------------------");
 });
 
 // add a click event listener to the div
 myDiv2.addEventListener('click', function() {
   // specify the action to take when the div is clicked
   console.log('Div 2 was clicked!');
+
+  if(flowController.player1Turn == true){
+    myDiv2.innerHTML = "1";
+  }else{
+    myDiv2.innerHTML = "2";
+  }
+
+  console.log(`Player 1 turn: ${flowController.player1Turn}`);
+  dashBoard.changeBoard(2, flowController);
+  flowController.checkWinConditions(dashBoard);
+  console.log(dashBoard.board);
+  console.log("-----------------------------------");
 });
 
 // add a click event listener to the div
 myDiv3.addEventListener('click', function() {
   // specify the action to take when the div is clicked
   console.log('Div 3 was clicked!');
+
+   if(flowController.player1Turn == true){
+    myDiv3.innerHTML = "1";
+  }else{
+    myDiv3.innerHTML = "2";
+  }
+
+  console.log(`Player 1 turn: ${flowController.player1Turn}`);
+  dashBoard.changeBoard(3, flowController);
+  flowController.checkWinConditions(dashBoard);
+  console.log(dashBoard.board);
+  console.log("-----------------------------------");
 });
 
 // add a click event listener to the div
 myDiv4.addEventListener('click', function() {
   // specify the action to take when the div is clicked
   console.log('Div 4 was clicked!');
+
+   if(flowController.player1Turn == true){
+    myDiv4.innerHTML = "1";
+  }else{
+    myDiv4.innerHTML = "2";
+  }
+
+  console.log(`Player 1 turn: ${flowController.player1Turn}`);
+  dashBoard.changeBoard(4, flowController);
+  flowController.checkWinConditions(dashBoard);
+  console.log(dashBoard.board);
+  console.log("-----------------------------------");
 });
 
 // add a click event listener to the div
 myDiv5.addEventListener('click', function() {
   // specify the action to take when the div is clicked
   console.log('Div 5 was clicked!');
+
+   if(flowController.player1Turn == true){
+    myDiv5.innerHTML = "1";
+  }else{
+    myDiv5.innerHTML = "2";
+  }
+
+  console.log(`Player 1 turn: ${flowController.player1Turn}`);
+  dashBoard.changeBoard(5, flowController);
+  flowController.checkWinConditions(dashBoard);
+  console.log(dashBoard.board);
+  console.log("-----------------------------------");
 });
 
 // add a click event listener to the div
 myDiv6.addEventListener('click', function() {
   // specify the action to take when the div is clicked
   console.log('Div 6 was clicked!');
+
+   if(flowController.player1Turn == true){
+    myDiv6.innerHTML = "1";
+  }else{
+    myDiv6.innerHTML = "2";
+  }
+
+  console.log(`Player 1 turn: ${flowController.player1Turn}`);
+  dashBoard.changeBoard(6, flowController);
+  flowController.checkWinConditions(dashBoard);
+  console.log(dashBoard.board);
+  console.log("-----------------------------------");
 });
 
 // add a click event listener to the div
 myDiv7.addEventListener('click', function() {
   // specify the action to take when the div is clicked
   console.log('Div 7 was clicked!');
+
+   if(flowController.player1Turn == true){
+    myDiv7.innerHTML = "1";
+  }else{
+    myDiv7.innerHTML = "2";
+  }
+
+  console.log(`Player 1 turn: ${flowController.player1Turn}`);
+  dashBoard.changeBoard(7, flowController);
+  flowController.checkWinConditions(dashBoard);
+  console.log(dashBoard.board);
+  console.log("-----------------------------------");
 });
 
 // add a click event listener to the div
 myDiv8.addEventListener('click', function() {
   // specify the action to take when the div is clicked
   console.log('Div 8 was clicked!');
+
+   if(flowController.player1Turn == true){
+    myDiv8.innerHTML = "1";
+  }else{
+    myDiv8.innerHTML = "2";
+  }
+
+  console.log(`Player 1 turn: ${flowController.player1Turn}`);
+  dashBoard.changeBoard(8, flowController);
+  flowController.checkWinConditions(dashBoard);
+  console.log(dashBoard.board);
+  console.log("-----------------------------------");
 });
