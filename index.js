@@ -65,12 +65,18 @@ function FlowController() {
     if(dashBoard.board[3] == dashBoard.board[4] && dashBoard.board[3] == dashBoard.board[5]){
       this.stillGoing = false;
       console.log(`2 HORIZONTAL IF CASE TEST WORKED! Player1 won: ${!this.player1Turn}`);
-      //this.player1Turn = !this.player1Turn;      
+      //this.player1Turn = !this.player1Turn;    
+      
+      //TESTAR RESET - TESTE FUNCIONOU
+      dashBoard.resetBoard();
     }
     if(dashBoard.board[6] == dashBoard.board[7] && dashBoard.board[6] == dashBoard.board[8]){
       this.stillGoing = false;
       console.log(`3 HORIZONTAL IF CASE TEST WORKED! Player1 won: ${!this.player1Turn}`);
-      //this.player1Turn = !this.player1Turn;      
+      //this.player1Turn = !this.player1Turn;     
+      
+      //TESTAR RESET - TESTE FUNCIONOU
+      dashBoard.resetBoard();
     }
 
     //Check Vertical Lines
@@ -78,16 +84,25 @@ function FlowController() {
       this.stillGoing = false;
       console.log(`FIRST VERTICAL IF CASE TEST WORKED! Player1 won: ${!this.player1Turn}`);
       //this.player1Turn = !this.player1Turn;      
+
+      //TESTAR RESET - TESTE FUNCIONOU
+      dashBoard.resetBoard();
     }
     if(dashBoard.board[1] == dashBoard.board[4] && dashBoard.board[1] == dashBoard.board[7]){
       this.stillGoing = false;
       console.log(`2 VERTICAL IF CASE TEST WORKED! Player1 won: ${!this.player1Turn}`);
       //this.player1Turn = !this.player1Turn;      
+
+      //TESTAR RESET - TESTE FUNCIONOU
+      dashBoard.resetBoard();
     }
     if(dashBoard.board[2] == dashBoard.board[5] && dashBoard.board[2] == dashBoard.board[8]){
       this.stillGoing = false;
       console.log(`3 VERTICAL IF CASE TEST WORKED! Player1 won: ${!this.player1Turn}`);
       //this.player1Turn = !this.player1Turn;      
+
+      //TESTAR RESET - TESTE FUNCIONOU
+      dashBoard.resetBoard();
     }
 
     //Check Diagonal Lines
@@ -95,11 +110,17 @@ function FlowController() {
       this.stillGoing = false;
       console.log(`FIRST DIAGONAL IF CASE TEST WORKED! Player1 won: ${!this.player1Turn}`);
       //this.player1Turn = !this.player1Turn;      
+
+      //TESTAR RESET - TESTE FUNCIONOU
+      dashBoard.resetBoard();
     }
     if(dashBoard.board[2] == dashBoard.board[4] && dashBoard.board[2] == dashBoard.board[6]){
       this.stillGoing = false;
       console.log(`2 DIAGONAL IF CASE TEST WORKED! Player1 won: ${!this.player1Turn}`);
       //this.player1Turn = !this.player1Turn;      
+
+      //TESTAR RESET - TESTE FUNCIONOU
+      dashBoard.resetBoard();
     }
   }
 
