@@ -6,9 +6,9 @@ function DashBoard() {
   this.changeBoard = function(index, flowController){ 
     //console.log(this.board[index]);
     if(flowController.player1Turn == true){
-      this.board[index] = 1;
+      this.board[index] = "X";
     }else{
-      this.board[index] = 2;
+      this.board[index] = "O";
     }
 
     flowController.player1Turn = !flowController.player1Turn;
@@ -33,15 +33,15 @@ function DashBoard() {
     const myDiv7 = document.querySelector('#div7');
     const myDiv8 = document.querySelector('#div8');
 
-    myDiv0.innerHTML = "0";
-    myDiv1.innerHTML = "1";
-    myDiv2.innerHTML = "2";
-    myDiv3.innerHTML = "3";
-    myDiv4.innerHTML = "4";
-    myDiv5.innerHTML = "5";
-    myDiv6.innerHTML = "6";
-    myDiv7.innerHTML = "7";
-    myDiv8.innerHTML = "8";
+    myDiv0.innerHTML = "";
+    myDiv1.innerHTML = "";
+    myDiv2.innerHTML = "";
+    myDiv3.innerHTML = "";
+    myDiv4.innerHTML = "";
+    myDiv5.innerHTML = "";
+    myDiv6.innerHTML = "";
+    myDiv7.innerHTML = "";
+    myDiv8.innerHTML = "";
   }
 }
 
@@ -61,9 +61,9 @@ function FlowController() {
          
       //TESTAR ALERT
       if(this.player1Turn == true){        
-        alert("GAME OVER!!! PLAYER 2 WON");
+        alert("GAME OVER!!! PLAYER O WON");
       }else if(this.player1Turn == false){
-        alert("GAME OVER!!! PLAYER 1 WON");
+        alert("GAME OVER!!! PLAYER X WON");
       }   
 
       //TESTAR RESET - TESTE FUNCIONOU
@@ -76,9 +76,9 @@ function FlowController() {
       
       //TESTAR ALERT
       if(this.player1Turn == true){        
-        alert("GAME OVER!!! PLAYER 2 WON");
+        alert("GAME OVER!!! PLAYER O WON");
       }else if(this.player1Turn == false){
-        alert("GAME OVER!!! PLAYER 1 WON");
+        alert("GAME OVER!!! PLAYER X WON");
       }   
 
       //TESTAR RESET - TESTE FUNCIONOU
@@ -91,9 +91,9 @@ function FlowController() {
       
       //TESTAR ALERT
       if(this.player1Turn == true){        
-        alert("GAME OVER!!! PLAYER 2 WON");
+        alert("GAME OVER!!! PLAYER O WON");
       }else if(this.player1Turn == false){
-        alert("GAME OVER!!! PLAYER 1 WON");
+        alert("GAME OVER!!! PLAYER X WON");
       }   
 
       //TESTAR RESET - TESTE FUNCIONOU
@@ -108,9 +108,9 @@ function FlowController() {
 
       //TESTAR ALERT
       if(this.player1Turn == true){        
-        alert("GAME OVER!!! PLAYER 2 WON");
+        alert("GAME OVER!!! PLAYER O WON");
       }else if(this.player1Turn == false){
-        alert("GAME OVER!!! PLAYER 1 WON");
+        alert("GAME OVER!!! PLAYER X WON");
       }   
 
       //TESTAR RESET - TESTE FUNCIONOU
@@ -123,10 +123,10 @@ function FlowController() {
 
       //TESTAR ALERT
       if(this.player1Turn == true){        
-        alert("GAME OVER!!! PLAYER 2 WON");
+        alert("GAME OVER!!! PLAYER O WON");
       }else if(this.player1Turn == false){
-        alert("GAME OVER!!! PLAYER 1 WON");
-      }   
+        alert("GAME OVER!!! PLAYER X WON");
+      }     
 
       //TESTAR RESET - TESTE FUNCIONOU
       dashBoard.resetBoard();
@@ -138,10 +138,10 @@ function FlowController() {
 
       //TESTAR ALERT
       if(this.player1Turn == true){        
-        alert("GAME OVER!!! PLAYER 2 WON");
+        alert("GAME OVER!!! PLAYER O WON");
       }else if(this.player1Turn == false){
-        alert("GAME OVER!!! PLAYER 1 WON");
-      }   
+        alert("GAME OVER!!! PLAYER X WON");
+      }     
 
       //TESTAR RESET - TESTE FUNCIONOU
       dashBoard.resetBoard();
@@ -155,10 +155,10 @@ function FlowController() {
 
       //TESTAR ALERT
       if(this.player1Turn == true){        
-        alert("GAME OVER!!! PLAYER 2 WON");
+        alert("GAME OVER!!! PLAYER O WON");
       }else if(this.player1Turn == false){
-        alert("GAME OVER!!! PLAYER 1 WON");
-      }   
+        alert("GAME OVER!!! PLAYER X WON");
+      }      
 
       //TESTAR RESET - TESTE FUNCIONOU
       dashBoard.resetBoard();
@@ -170,10 +170,10 @@ function FlowController() {
 
       //TESTAR ALERT
       if(this.player1Turn == true){        
-        alert("GAME OVER!!! PLAYER 2 WON");
+        alert("GAME OVER!!! PLAYER O WON");
       }else if(this.player1Turn == false){
-        alert("GAME OVER!!! PLAYER 1 WON");
-      }   
+        alert("GAME OVER!!! PLAYER X WON");
+      }     
 
       //TESTAR RESET - TESTE FUNCIONOU
       dashBoard.resetBoard();
@@ -225,9 +225,9 @@ myDiv0.addEventListener('click', function() {
   console.log('Div 0 was clicked!');
 
   if(flowController.player1Turn == true){
-    myDiv0.innerHTML = "1";
+    myDiv0.innerHTML = "X";
   }else{
-    myDiv0.innerHTML = "2";
+    myDiv0.innerHTML = "O";
   }
 
   console.log(`Player 1 turn: ${flowController.player1Turn}`);
@@ -243,9 +243,9 @@ myDiv1.addEventListener('click', function() {
   console.log('Div 1 was clicked!');
 
   if(flowController.player1Turn == true){
-    myDiv1.innerHTML = "1";
+    myDiv1.innerHTML = "X";
   }else{
-    myDiv1.innerHTML = "2";
+    myDiv1.innerHTML = "O";
   }
 
   console.log(`Player 1 turn: ${flowController.player1Turn}`);
@@ -261,9 +261,9 @@ myDiv2.addEventListener('click', function() {
   console.log('Div 2 was clicked!');
 
   if(flowController.player1Turn == true){
-    myDiv2.innerHTML = "1";
+    myDiv2.innerHTML = "X";
   }else{
-    myDiv2.innerHTML = "2";
+    myDiv2.innerHTML = "O";
   }
 
   console.log(`Player 1 turn: ${flowController.player1Turn}`);
@@ -279,9 +279,9 @@ myDiv3.addEventListener('click', function() {
   console.log('Div 3 was clicked!');
 
    if(flowController.player1Turn == true){
-    myDiv3.innerHTML = "1";
+    myDiv3.innerHTML = "X";
   }else{
-    myDiv3.innerHTML = "2";
+    myDiv3.innerHTML = "O";
   }
 
   console.log(`Player 1 turn: ${flowController.player1Turn}`);
@@ -297,9 +297,9 @@ myDiv4.addEventListener('click', function() {
   console.log('Div 4 was clicked!');
 
    if(flowController.player1Turn == true){
-    myDiv4.innerHTML = "1";
+    myDiv4.innerHTML = "X";
   }else{
-    myDiv4.innerHTML = "2";
+    myDiv4.innerHTML = "O";
   }
 
   console.log(`Player 1 turn: ${flowController.player1Turn}`);
@@ -315,9 +315,9 @@ myDiv5.addEventListener('click', function() {
   console.log('Div 5 was clicked!');
 
    if(flowController.player1Turn == true){
-    myDiv5.innerHTML = "1";
+    myDiv5.innerHTML = "X";
   }else{
-    myDiv5.innerHTML = "2";
+    myDiv5.innerHTML = "O";
   }
 
   console.log(`Player 1 turn: ${flowController.player1Turn}`);
@@ -333,9 +333,9 @@ myDiv6.addEventListener('click', function() {
   console.log('Div 6 was clicked!');
 
    if(flowController.player1Turn == true){
-    myDiv6.innerHTML = "1";
+    myDiv6.innerHTML = "X";
   }else{
-    myDiv6.innerHTML = "2";
+    myDiv6.innerHTML = "O";
   }
 
   console.log(`Player 1 turn: ${flowController.player1Turn}`);
@@ -351,9 +351,9 @@ myDiv7.addEventListener('click', function() {
   console.log('Div 7 was clicked!');
 
    if(flowController.player1Turn == true){
-    myDiv7.innerHTML = "1";
+    myDiv7.innerHTML = "X";
   }else{
-    myDiv7.innerHTML = "2";
+    myDiv7.innerHTML = "O";
   }
 
   console.log(`Player 1 turn: ${flowController.player1Turn}`);
@@ -369,9 +369,9 @@ myDiv8.addEventListener('click', function() {
   console.log('Div 8 was clicked!');
 
    if(flowController.player1Turn == true){
-    myDiv8.innerHTML = "1";
+    myDiv8.innerHTML = "X";
   }else{
-    myDiv8.innerHTML = "2";
+    myDiv8.innerHTML = "O";
   }
 
   console.log(`Player 1 turn: ${flowController.player1Turn}`);
