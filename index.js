@@ -1,10 +1,4 @@
-function DashBoard() {
-  /*
-  this.board = [0, 1, 0, 
-                2, 1, 2,
-                1, 0, 3];
-  */              
-
+function DashBoard() {            
   this.board = [0, 1, 2, 
                 3, 4, 5,
                 6, 7, 8];
@@ -20,8 +14,38 @@ function DashBoard() {
     flowController.player1Turn = !flowController.player1Turn;
     //let testTransfer = this.player1Turn;
     //this.player1Turn = !testTransfer;
-  }                
+  }   
+  
+  this.resetBoard = function(){
+    this.board = [0, 1, 2, 
+                  3, 4, 5,
+                  6, 7, 8];
+
+    //fazer reset no html tbm
+    //SUPER PODRE mas Funciona
+    const myDiv0 = document.querySelector('#div0');
+    const myDiv1 = document.querySelector('#div1');
+    const myDiv2 = document.querySelector('#div2');
+    const myDiv3 = document.querySelector('#div3');
+    const myDiv4 = document.querySelector('#div4');
+    const myDiv5 = document.querySelector('#div5');
+    const myDiv6 = document.querySelector('#div6');
+    const myDiv7 = document.querySelector('#div7');
+    const myDiv8 = document.querySelector('#div8');
+
+    myDiv0.innerHTML = "0";
+    myDiv1.innerHTML = "1";
+    myDiv2.innerHTML = "2";
+    myDiv3.innerHTML = "3";
+    myDiv4.innerHTML = "4";
+    myDiv5.innerHTML = "5";
+    myDiv6.innerHTML = "6";
+    myDiv7.innerHTML = "7";
+    myDiv8.innerHTML = "8";
+  }
 }
+
+
 
 function FlowController() {
   this.stillGoing = true;
@@ -34,6 +58,9 @@ function FlowController() {
       this.stillGoing = false;
       console.log(`FIRST HORIZONTAL IF CASE TEST WORKED! Player1 won: ${!this.player1Turn}`);
       //this.player1Turn = !this.player1Turn;      
+
+      //TESTAR RESET - TESTE FUNCIONOU
+      dashBoard.resetBoard();
     }
     if(dashBoard.board[3] == dashBoard.board[4] && dashBoard.board[3] == dashBoard.board[5]){
       this.stillGoing = false;
