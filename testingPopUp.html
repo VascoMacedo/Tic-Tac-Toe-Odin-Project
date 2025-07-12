@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="testingPopUp.css">
+</head>
+<body>
+  <div>SPACE</div>
+  <div>SPACE</div>
+  <div>SPACE</div>
+  <div>SPACE</div>
+  <div class="popup" onclick="myFunction()">Click me!
+    <span class="popuptext" id="myPopup">Popup text...</span>
+  </div>
+    
+
+  <div class="popup-overlay" id="popupOverlay">
+    <div class="popup" id="popup">
+      <span class="close" id="closePopup">&times;</span>
+      <p>Sign up for exclusive deals!</p>
+      <input type="email" placeholder="Your email">
+      <button>Submit</button>
+    </div>
+  </div>
+
+
+
+
+  <script>
+    // When the user clicks on <div>, open the popup
+    function myFunction() {
+      var popup = document.getElementById("myPopup");
+      popup.classList.toggle("show");
+
+      alert("Hello! I am an alert box!!");
+    }
+
+    document.getElementById("popupOverlay").style.display = "block";
+    document.getElementById("closePopup").onclick = function() {
+        document.getElementById("popupOverlay").style.display = "none";
+    };
+  </script>    
+</body>
+</html>

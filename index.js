@@ -61,6 +61,8 @@ function FlowController() {
 
       //TESTAR RESET - TESTE FUNCIONOU
       dashBoard.resetBoard();
+      //TESTAR ALERT
+      alert("Hello! I am an alert box!!");
     }
     if(dashBoard.board[3] == dashBoard.board[4] && dashBoard.board[3] == dashBoard.board[5]){
       this.stillGoing = false;
