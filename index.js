@@ -57,18 +57,30 @@ function FlowController() {
     if(dashBoard.board[0] == dashBoard.board[1] && dashBoard.board[0] == dashBoard.board[2]){
       this.stillGoing = false;
       console.log(`FIRST HORIZONTAL IF CASE TEST WORKED! Player1 won: ${!this.player1Turn}`);
-      //this.player1Turn = !this.player1Turn;      
+      //this.player1Turn = !this.player1Turn;            
+         
+      //TESTAR ALERT
+      if(this.player1Turn == true){        
+        alert("GAME OVER!!! PLAYER 2 WON");
+      }else if(this.player1Turn == false){
+        alert("GAME OVER!!! PLAYER 1 WON");
+      }   
 
       //TESTAR RESET - TESTE FUNCIONOU
       dashBoard.resetBoard();
-      //TESTAR ALERT
-      alert("Hello! I am an alert box!!");
     }
     if(dashBoard.board[3] == dashBoard.board[4] && dashBoard.board[3] == dashBoard.board[5]){
       this.stillGoing = false;
       console.log(`2 HORIZONTAL IF CASE TEST WORKED! Player1 won: ${!this.player1Turn}`);
       //this.player1Turn = !this.player1Turn;    
       
+      //TESTAR ALERT
+      if(this.player1Turn == true){        
+        alert("GAME OVER!!! PLAYER 2 WON");
+      }else if(this.player1Turn == false){
+        alert("GAME OVER!!! PLAYER 1 WON");
+      }   
+
       //TESTAR RESET - TESTE FUNCIONOU
       dashBoard.resetBoard();
     }
@@ -77,6 +89,13 @@ function FlowController() {
       console.log(`3 HORIZONTAL IF CASE TEST WORKED! Player1 won: ${!this.player1Turn}`);
       //this.player1Turn = !this.player1Turn;     
       
+      //TESTAR ALERT
+      if(this.player1Turn == true){        
+        alert("GAME OVER!!! PLAYER 2 WON");
+      }else if(this.player1Turn == false){
+        alert("GAME OVER!!! PLAYER 1 WON");
+      }   
+
       //TESTAR RESET - TESTE FUNCIONOU
       dashBoard.resetBoard();
     }
@@ -87,6 +106,13 @@ function FlowController() {
       console.log(`FIRST VERTICAL IF CASE TEST WORKED! Player1 won: ${!this.player1Turn}`);
       //this.player1Turn = !this.player1Turn;      
 
+      //TESTAR ALERT
+      if(this.player1Turn == true){        
+        alert("GAME OVER!!! PLAYER 2 WON");
+      }else if(this.player1Turn == false){
+        alert("GAME OVER!!! PLAYER 1 WON");
+      }   
+
       //TESTAR RESET - TESTE FUNCIONOU
       dashBoard.resetBoard();
     }
@@ -95,6 +121,13 @@ function FlowController() {
       console.log(`2 VERTICAL IF CASE TEST WORKED! Player1 won: ${!this.player1Turn}`);
       //this.player1Turn = !this.player1Turn;      
 
+      //TESTAR ALERT
+      if(this.player1Turn == true){        
+        alert("GAME OVER!!! PLAYER 2 WON");
+      }else if(this.player1Turn == false){
+        alert("GAME OVER!!! PLAYER 1 WON");
+      }   
+
       //TESTAR RESET - TESTE FUNCIONOU
       dashBoard.resetBoard();
     }
@@ -102,6 +135,13 @@ function FlowController() {
       this.stillGoing = false;
       console.log(`3 VERTICAL IF CASE TEST WORKED! Player1 won: ${!this.player1Turn}`);
       //this.player1Turn = !this.player1Turn;      
+
+      //TESTAR ALERT
+      if(this.player1Turn == true){        
+        alert("GAME OVER!!! PLAYER 2 WON");
+      }else if(this.player1Turn == false){
+        alert("GAME OVER!!! PLAYER 1 WON");
+      }   
 
       //TESTAR RESET - TESTE FUNCIONOU
       dashBoard.resetBoard();
@@ -113,6 +153,13 @@ function FlowController() {
       console.log(`FIRST DIAGONAL IF CASE TEST WORKED! Player1 won: ${!this.player1Turn}`);
       //this.player1Turn = !this.player1Turn;      
 
+      //TESTAR ALERT
+      if(this.player1Turn == true){        
+        alert("GAME OVER!!! PLAYER 2 WON");
+      }else if(this.player1Turn == false){
+        alert("GAME OVER!!! PLAYER 1 WON");
+      }   
+
       //TESTAR RESET - TESTE FUNCIONOU
       dashBoard.resetBoard();
     }
@@ -120,6 +167,13 @@ function FlowController() {
       this.stillGoing = false;
       console.log(`2 DIAGONAL IF CASE TEST WORKED! Player1 won: ${!this.player1Turn}`);
       //this.player1Turn = !this.player1Turn;      
+
+      //TESTAR ALERT
+      if(this.player1Turn == true){        
+        alert("GAME OVER!!! PLAYER 2 WON");
+      }else if(this.player1Turn == false){
+        alert("GAME OVER!!! PLAYER 1 WON");
+      }   
 
       //TESTAR RESET - TESTE FUNCIONOU
       dashBoard.resetBoard();
@@ -154,28 +208,6 @@ flowController = new FlowController();
 
 console.log(dashBoard.board);
 
-//dashBoard.changeBoard(2, flowController);
-//dashBoard.changeBoard(3, flowController);
-
-/*ALTERNATE UNIVERSE - OLD TEST
-console.log(`Player 1 turn: ${flowController.player1Turn}`);
-dashBoard.changeBoard(8, flowController);
-flowController.checkWinConditions(dashBoard);
-console.log(dashBoard.board);
-console.log("-----------------------------------");
-
-console.log(`Player 1 turn: ${flowController.player1Turn}`);
-dashBoard.changeBoard(3, flowController);
-flowController.checkWinConditions(dashBoard);
-console.log(dashBoard.board);
-console.log("-----------------------------------");
-
-console.log(`Player 1 turn: ${flowController.player1Turn}`);
-dashBoard.changeBoard(0, flowController);
-flowController.checkWinConditions(dashBoard);
-console.log(dashBoard.board);
-console.log("-----------------------------------");
-*/
 
 const myDiv0 = document.querySelector('#div0');
 const myDiv1 = document.querySelector('#div1');
