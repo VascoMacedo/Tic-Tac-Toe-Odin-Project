@@ -182,6 +182,19 @@ function FlowController() {
       //TESTAR RESET - TESTE FUNCIONOU
       dashBoard.resetBoard();
     }
+
+    //TESTAR DRAW -
+    let anySpotsLeft = false; 
+    dashBoard.board.map(function(spot) {      
+      if(spot != "X" && spot != "O"){
+        anySpotsLeft = true;
+      }
+    });
+
+    if(anySpotsLeft == false){
+      alert("DRAW!!!");
+      dashBoard.resetBoard();
+    }
   }
 
   this.gameFlow = function(){
