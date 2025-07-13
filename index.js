@@ -1,8 +1,8 @@
 function DashBoard() {            
   this.board = [0, 1, 2, 
                 3, 4, 5,
-                6, 7, 8];
-                
+                6, 7, 8];                                  
+
   this.changeBoard = function(index, flowController){ 
     //console.log(this.board[index]);
     let canContinue = true;
@@ -55,6 +55,9 @@ function FlowController() {
   this.stillGoing = true;
   this.player1Turn = true;
 
+  this.player1Score = 0;
+  this.player2Score = 0;
+
   this.checkWinConditions = function(dashBoard) {    
     // Check Horizontal Lines And Set stillGoing To False 
     // AND Change Players Turn(SHOLD NOT BE HERE BUT KEEP IT FOR LATER)
@@ -65,9 +68,13 @@ function FlowController() {
          
       //TESTAR ALERT
       if(this.player1Turn == true){        
-        alert("GAME OVER!!! PLAYER O WON");
+        this.player2Score += 1;
+        console.log(this.player2Score);
+        alert("GAME OVER!!! PLAYER O WON");        
       }else if(this.player1Turn == false){
-        alert("GAME OVER!!! PLAYER X WON");
+        this.player1Score += 1;
+        console.log(this.player1Score);
+        alert("GAME OVER!!! PLAYER X WON");        
       }   
 
       //TESTAR RESET - TESTE FUNCIONOU
