@@ -66,14 +66,14 @@ function FlowController() {
       console.log(`FIRST HORIZONTAL IF CASE TEST WORKED! Player1 won: ${!this.player1Turn}`);
       //this.player1Turn = !this.player1Turn;            
          
-      //TESTAR ALERT
+      //TESTAR SCORE DISPLAY
       if(this.player1Turn == true){        
         this.player2Score += 1;
-        console.log(this.player2Score);
+        console.log(`Player 1: ${this.player1Score} VS. Player 2: ${this.player2Score} `);
         alert("GAME OVER!!! PLAYER O WON");        
       }else if(this.player1Turn == false){
         this.player1Score += 1;
-        console.log(this.player1Score);
+        console.log(`Player 1: ${this.player1Score} VS. Player 2: ${this.player2Score} `);
         alert("GAME OVER!!! PLAYER X WON");        
       }   
 
@@ -85,12 +85,16 @@ function FlowController() {
       console.log(`2 HORIZONTAL IF CASE TEST WORKED! Player1 won: ${!this.player1Turn}`);
       //this.player1Turn = !this.player1Turn;    
       
-      //TESTAR ALERT
+      //TESTAR SCORE DISPLAY
       if(this.player1Turn == true){        
-        alert("GAME OVER!!! PLAYER O WON");
+        this.player2Score += 1;
+        console.log(`Player 1: ${this.player1Score} VS. Player 2: ${this.player2Score} `);
+        alert("GAME OVER!!! PLAYER O WON");        
       }else if(this.player1Turn == false){
-        alert("GAME OVER!!! PLAYER X WON");
-      }   
+        this.player1Score += 1;
+        console.log(`Player 1: ${this.player1Score} VS. Player 2: ${this.player2Score} `);
+        alert("GAME OVER!!! PLAYER X WON");        
+      }      
 
       //TESTAR RESET - TESTE FUNCIONOU
       dashBoard.resetBoard();
@@ -100,11 +104,15 @@ function FlowController() {
       console.log(`3 HORIZONTAL IF CASE TEST WORKED! Player1 won: ${!this.player1Turn}`);
       //this.player1Turn = !this.player1Turn;     
       
-      //TESTAR ALERT
+      //TESTAR SCORE DISPLAY
       if(this.player1Turn == true){        
-        alert("GAME OVER!!! PLAYER O WON");
+        this.player2Score += 1;
+        console.log(`Player 1: ${this.player1Score} VS. Player 2: ${this.player2Score} `);
+        alert("GAME OVER!!! PLAYER O WON");        
       }else if(this.player1Turn == false){
-        alert("GAME OVER!!! PLAYER X WON");
+        this.player1Score += 1;
+        console.log(`Player 1: ${this.player1Score} VS. Player 2: ${this.player2Score} `);
+        alert("GAME OVER!!! PLAYER X WON");        
       }   
 
       //TESTAR RESET - TESTE FUNCIONOU
@@ -117,12 +125,16 @@ function FlowController() {
       console.log(`FIRST VERTICAL IF CASE TEST WORKED! Player1 won: ${!this.player1Turn}`);
       //this.player1Turn = !this.player1Turn;      
 
-      //TESTAR ALERT
+      //TESTAR SCORE DISPLAY
       if(this.player1Turn == true){        
-        alert("GAME OVER!!! PLAYER O WON");
+        this.player2Score += 1;
+        console.log(`Player 1: ${this.player1Score} VS. Player 2: ${this.player2Score} `);
+        alert("GAME OVER!!! PLAYER O WON");        
       }else if(this.player1Turn == false){
-        alert("GAME OVER!!! PLAYER X WON");
-      }   
+        this.player1Score += 1;
+        console.log(`Player 1: ${this.player1Score} VS. Player 2: ${this.player2Score} `);
+        alert("GAME OVER!!! PLAYER X WON");        
+      }    
 
       //TESTAR RESET - TESTE FUNCIONOU
       dashBoard.resetBoard();
@@ -132,12 +144,16 @@ function FlowController() {
       console.log(`2 VERTICAL IF CASE TEST WORKED! Player1 won: ${!this.player1Turn}`);
       //this.player1Turn = !this.player1Turn;      
 
-      //TESTAR ALERT
+      //TESTAR SCORE DISPLAY
       if(this.player1Turn == true){        
-        alert("GAME OVER!!! PLAYER O WON");
+        this.player2Score += 1;
+        console.log(`Player 1: ${this.player1Score} VS. Player 2: ${this.player2Score} `);
+        alert("GAME OVER!!! PLAYER O WON");        
       }else if(this.player1Turn == false){
-        alert("GAME OVER!!! PLAYER X WON");
-      }     
+        this.player1Score += 1;
+        console.log(`Player 1: ${this.player1Score} VS. Player 2: ${this.player2Score} `);
+        alert("GAME OVER!!! PLAYER X WON");        
+      }       
 
       //TESTAR RESET - TESTE FUNCIONOU
       dashBoard.resetBoard();
@@ -147,12 +163,16 @@ function FlowController() {
       console.log(`3 VERTICAL IF CASE TEST WORKED! Player1 won: ${!this.player1Turn}`);
       //this.player1Turn = !this.player1Turn;      
 
-      //TESTAR ALERT
+      //TESTAR SCORE DISPLAY
       if(this.player1Turn == true){        
-        alert("GAME OVER!!! PLAYER O WON");
+        this.player2Score += 1;
+        console.log(`Player 1: ${this.player1Score} VS. Player 2: ${this.player2Score} `);
+        alert("GAME OVER!!! PLAYER O WON");        
       }else if(this.player1Turn == false){
-        alert("GAME OVER!!! PLAYER X WON");
-      }     
+        this.player1Score += 1;
+        console.log(`Player 1: ${this.player1Score} VS. Player 2: ${this.player2Score} `);
+        alert("GAME OVER!!! PLAYER X WON");        
+      }       
 
       //TESTAR RESET - TESTE FUNCIONOU
       dashBoard.resetBoard();
@@ -164,12 +184,16 @@ function FlowController() {
       console.log(`FIRST DIAGONAL IF CASE TEST WORKED! Player1 won: ${!this.player1Turn}`);
       //this.player1Turn = !this.player1Turn;      
 
-      //TESTAR ALERT
+      //TESTAR SCORE DISPLAY
       if(this.player1Turn == true){        
-        alert("GAME OVER!!! PLAYER O WON");
+        this.player2Score += 1;
+        console.log(`Player 1: ${this.player1Score} VS. Player 2: ${this.player2Score} `);
+        alert("GAME OVER!!! PLAYER O WON");        
       }else if(this.player1Turn == false){
-        alert("GAME OVER!!! PLAYER X WON");
-      }      
+        this.player1Score += 1;
+        console.log(`Player 1: ${this.player1Score} VS. Player 2: ${this.player2Score} `);
+        alert("GAME OVER!!! PLAYER X WON");        
+      }         
 
       //TESTAR RESET - TESTE FUNCIONOU
       dashBoard.resetBoard();
@@ -179,12 +203,16 @@ function FlowController() {
       console.log(`2 DIAGONAL IF CASE TEST WORKED! Player1 won: ${!this.player1Turn}`);
       //this.player1Turn = !this.player1Turn;      
 
-      //TESTAR ALERT
+      //TESTAR SCORE DISPLAY
       if(this.player1Turn == true){        
-        alert("GAME OVER!!! PLAYER O WON");
+        this.player2Score += 1;
+        console.log(`Player 1: ${this.player1Score} VS. Player 2: ${this.player2Score} `);
+        alert("GAME OVER!!! PLAYER O WON");        
       }else if(this.player1Turn == false){
-        alert("GAME OVER!!! PLAYER X WON");
-      }     
+        this.player1Score += 1;
+        console.log(`Player 1: ${this.player1Score} VS. Player 2: ${this.player2Score} `);
+        alert("GAME OVER!!! PLAYER X WON");        
+      }       
 
       //TESTAR RESET - TESTE FUNCIONOU
       dashBoard.resetBoard();
