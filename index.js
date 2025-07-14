@@ -47,6 +47,12 @@ function DashBoard() {
     myDiv7.innerHTML = "";
     myDiv8.innerHTML = "";
   }
+
+  this.updateScore = function(flowController){
+    const myScoreDiv = document.querySelector('.scoreDisplay');
+
+    myScoreDiv.innerHTML = `Player 1: ${flowController.player1Score} VS. Player 2: ${flowController.player2Score} `;
+  }
 }
 
 
@@ -70,11 +76,17 @@ function FlowController() {
       if(this.player1Turn == true){        
         this.player2Score += 1;
         console.log(`Player 1: ${this.player1Score} VS. Player 2: ${this.player2Score} `);
-        alert("GAME OVER!!! PLAYER O WON");        
+        alert("GAME OVER!!! PLAYER O WON"); 
+        
+        //TESTAR UPDATE SCORE
+        dashBoard.updateScore(this);
       }else if(this.player1Turn == false){
         this.player1Score += 1;
         console.log(`Player 1: ${this.player1Score} VS. Player 2: ${this.player2Score} `);
-        alert("GAME OVER!!! PLAYER X WON");        
+        alert("GAME OVER!!! PLAYER X WON");
+        
+        //TESTAR UPDATE SCORE
+        dashBoard.updateScore(this);
       }   
 
       //TESTAR RESET - TESTE FUNCIONOU
@@ -89,11 +101,17 @@ function FlowController() {
       if(this.player1Turn == true){        
         this.player2Score += 1;
         console.log(`Player 1: ${this.player1Score} VS. Player 2: ${this.player2Score} `);
-        alert("GAME OVER!!! PLAYER O WON");        
+        alert("GAME OVER!!! PLAYER O WON");   
+        
+        //TESTAR UPDATE SCORE
+        dashBoard.updateScore(this);
       }else if(this.player1Turn == false){
         this.player1Score += 1;
         console.log(`Player 1: ${this.player1Score} VS. Player 2: ${this.player2Score} `);
-        alert("GAME OVER!!! PLAYER X WON");        
+        alert("GAME OVER!!! PLAYER X WON");
+        
+        //TESTAR UPDATE SCORE
+        dashBoard.updateScore(this);
       }      
 
       //TESTAR RESET - TESTE FUNCIONOU
@@ -108,11 +126,17 @@ function FlowController() {
       if(this.player1Turn == true){        
         this.player2Score += 1;
         console.log(`Player 1: ${this.player1Score} VS. Player 2: ${this.player2Score} `);
-        alert("GAME OVER!!! PLAYER O WON");        
+        alert("GAME OVER!!! PLAYER O WON");
+        
+        //TESTAR UPDATE SCORE
+        dashBoard.updateScore(this);
       }else if(this.player1Turn == false){
         this.player1Score += 1;
         console.log(`Player 1: ${this.player1Score} VS. Player 2: ${this.player2Score} `);
         alert("GAME OVER!!! PLAYER X WON");        
+
+        //TESTAR UPDATE SCORE
+        dashBoard.updateScore(this);
       }   
 
       //TESTAR RESET - TESTE FUNCIONOU
@@ -130,10 +154,16 @@ function FlowController() {
         this.player2Score += 1;
         console.log(`Player 1: ${this.player1Score} VS. Player 2: ${this.player2Score} `);
         alert("GAME OVER!!! PLAYER O WON");        
+
+        //TESTAR UPDATE SCORE
+        dashBoard.updateScore(this);
       }else if(this.player1Turn == false){
         this.player1Score += 1;
         console.log(`Player 1: ${this.player1Score} VS. Player 2: ${this.player2Score} `);
         alert("GAME OVER!!! PLAYER X WON");        
+        
+        //TESTAR UPDATE SCORE
+        dashBoard.updateScore(this);
       }    
 
       //TESTAR RESET - TESTE FUNCIONOU
@@ -149,10 +179,16 @@ function FlowController() {
         this.player2Score += 1;
         console.log(`Player 1: ${this.player1Score} VS. Player 2: ${this.player2Score} `);
         alert("GAME OVER!!! PLAYER O WON");        
+
+        //TESTAR UPDATE SCORE
+        dashBoard.updateScore(this);
       }else if(this.player1Turn == false){
         this.player1Score += 1;
         console.log(`Player 1: ${this.player1Score} VS. Player 2: ${this.player2Score} `);
         alert("GAME OVER!!! PLAYER X WON");        
+
+        //TESTAR UPDATE SCORE
+        dashBoard.updateScore(this);
       }       
 
       //TESTAR RESET - TESTE FUNCIONOU
@@ -168,10 +204,16 @@ function FlowController() {
         this.player2Score += 1;
         console.log(`Player 1: ${this.player1Score} VS. Player 2: ${this.player2Score} `);
         alert("GAME OVER!!! PLAYER O WON");        
+
+        //TESTAR UPDATE SCORE
+        dashBoard.updateScore(this);
       }else if(this.player1Turn == false){
         this.player1Score += 1;
         console.log(`Player 1: ${this.player1Score} VS. Player 2: ${this.player2Score} `);
         alert("GAME OVER!!! PLAYER X WON");        
+
+        //TESTAR UPDATE SCORE
+        dashBoard.updateScore(this);
       }       
 
       //TESTAR RESET - TESTE FUNCIONOU
@@ -189,10 +231,16 @@ function FlowController() {
         this.player2Score += 1;
         console.log(`Player 1: ${this.player1Score} VS. Player 2: ${this.player2Score} `);
         alert("GAME OVER!!! PLAYER O WON");        
+
+        //TESTAR UPDATE SCORE
+        dashBoard.updateScore(this);
       }else if(this.player1Turn == false){
         this.player1Score += 1;
         console.log(`Player 1: ${this.player1Score} VS. Player 2: ${this.player2Score} `);
         alert("GAME OVER!!! PLAYER X WON");        
+
+        //TESTAR UPDATE SCORE
+        dashBoard.updateScore(this);
       }         
 
       //TESTAR RESET - TESTE FUNCIONOU
@@ -208,10 +256,16 @@ function FlowController() {
         this.player2Score += 1;
         console.log(`Player 1: ${this.player1Score} VS. Player 2: ${this.player2Score} `);
         alert("GAME OVER!!! PLAYER O WON");        
+
+        //TESTAR UPDATE SCORE
+        dashBoard.updateScore(this);
       }else if(this.player1Turn == false){
         this.player1Score += 1;
         console.log(`Player 1: ${this.player1Score} VS. Player 2: ${this.player2Score} `);
-        alert("GAME OVER!!! PLAYER X WON");        
+        alert("GAME OVER!!! PLAYER X WON");     
+        
+        //TESTAR UPDATE SCORE
+        dashBoard.updateScore(this);
       }       
 
       //TESTAR RESET - TESTE FUNCIONOU
