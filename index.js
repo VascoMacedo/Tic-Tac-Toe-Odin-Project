@@ -55,8 +55,6 @@ function DashBoard() {
   }
 }
 
-
-
 function FlowController() {
   this.stillGoing = true;
   this.player1Turn = true;
@@ -307,218 +305,216 @@ function FlowController() {
   }
 }
 
+function domManipulator(){
+  const myDiv0 = document.querySelector('#div0');
+  const myDiv1 = document.querySelector('#div1');
+  const myDiv2 = document.querySelector('#div2');
+  const myDiv3 = document.querySelector('#div3');
+  const myDiv4 = document.querySelector('#div4');
+  const myDiv5 = document.querySelector('#div5');
+  const myDiv6 = document.querySelector('#div6');
+  const myDiv7 = document.querySelector('#div7');
+  const myDiv8 = document.querySelector('#div8');
 
+  // add a click event listener to the div
+  myDiv0.addEventListener('click', function() {
+    // specify the action to take when the div is clicked
+    console.log('Div 0 was clicked!');
+
+    // COPIAR ISTO???
+    if(flowController.player1Turn == true && myDiv0.innerHTML != "X" && myDiv0.innerHTML != "O"){
+      myDiv0.innerHTML = "X";    
+    }else if(flowController.player1Turn == false && myDiv0.innerHTML != "X" && myDiv0.innerHTML != "O"){
+      myDiv0.innerHTML = "O";    
+    }else{         
+      //FIX NOJENTO - PQ Vai Mudar outra Vez
+      flowController.player1Turn = !flowController.player1Turn;
+    }
+    
+    console.log(`Player 1 turn: ${flowController.player1Turn}`);
+    dashBoard.changeBoard(0, flowController);
+    flowController.checkWinConditions(dashBoard);
+    console.log(dashBoard.board);
+    console.log("-----------------------------------");
+  });
+  
+  // add a click event listener to the div
+  myDiv1.addEventListener('click', function() {
+    // specify the action to take when the div is clicked
+    console.log('Div 1 was clicked!');
+
+    // COPIAR ISTO???
+    if(flowController.player1Turn == true && myDiv1.innerHTML != "X" && myDiv1.innerHTML != "O"){
+      myDiv1.innerHTML = "X";    
+    }else if(flowController.player1Turn == false && myDiv1.innerHTML != "X" && myDiv1.innerHTML != "O"){
+      myDiv1.innerHTML = "O";    
+    }else{       
+      //FIX NOJENTO - PQ Vai Mudar outra Vez
+      flowController.player1Turn = !flowController.player1Turn; 
+    }  
+
+    console.log(`Player 1 turn: ${flowController.player1Turn}`);
+    dashBoard.changeBoard(1, flowController);
+    flowController.checkWinConditions(dashBoard);
+    console.log(dashBoard.board);
+    console.log("-----------------------------------");
+  });
+
+  // add a click event listener to the div
+  myDiv2.addEventListener('click', function() {
+    // specify the action to take when the div is clicked
+    console.log('Div 2 was clicked!');
+
+    // COPIAR ISTO???
+    if(flowController.player1Turn == true && myDiv2.innerHTML != "X" && myDiv2.innerHTML != "O"){
+      myDiv2.innerHTML = "X";    
+    }else if(flowController.player1Turn == false && myDiv2.innerHTML != "X" && myDiv2.innerHTML != "O"){
+      myDiv2.innerHTML = "O";    
+    }else{       
+      //FIX NOJENTO - PQ Vai Mudar outra Vez
+      flowController.player1Turn = !flowController.player1Turn; 
+    }
+
+    console.log(`Player 1 turn: ${flowController.player1Turn}`);
+    dashBoard.changeBoard(2, flowController);
+    flowController.checkWinConditions(dashBoard);
+    console.log(dashBoard.board);
+    console.log("-----------------------------------");
+  });
+
+  // add a click event listener to the div
+  myDiv3.addEventListener('click', function() {
+    // specify the action to take when the div is clicked
+    console.log('Div 3 was clicked!');
+
+    // COPIAR ISTO???
+    if(flowController.player1Turn == true && myDiv3.innerHTML != "X" && myDiv3.innerHTML != "O"){
+      myDiv3.innerHTML = "X";    
+    }else if(flowController.player1Turn == false && myDiv3.innerHTML != "X" && myDiv3.innerHTML != "O"){
+      myDiv3.innerHTML = "O";    
+    }else{       
+      //FIX NOJENTO - PQ Vai Mudar outra Vez
+      flowController.player1Turn = !flowController.player1Turn; 
+    }
+
+    console.log(`Player 1 turn: ${flowController.player1Turn}`);
+    dashBoard.changeBoard(3, flowController);
+    flowController.checkWinConditions(dashBoard);
+    console.log(dashBoard.board);
+    console.log("-----------------------------------");
+  });
+
+  // add a click event listener to the div
+  myDiv4.addEventListener('click', function() {
+    // specify the action to take when the div is clicked
+    console.log('Div 4 was clicked!');
+
+    // COPIAR ISTO???
+    if(flowController.player1Turn == true && myDiv4.innerHTML != "X" && myDiv4.innerHTML != "O"){
+      myDiv4.innerHTML = "X";    
+    }else if(flowController.player1Turn == false && myDiv4.innerHTML != "X" && myDiv4.innerHTML != "O"){
+      myDiv4.innerHTML = "O";    
+    }else{       
+      //FIX NOJENTO - PQ Vai Mudar outra Vez
+      flowController.player1Turn = !flowController.player1Turn; 
+    }
+
+    console.log(`Player 1 turn: ${flowController.player1Turn}`);
+    dashBoard.changeBoard(4, flowController);
+    flowController.checkWinConditions(dashBoard);
+    console.log(dashBoard.board);
+    console.log("-----------------------------------");
+  });
+
+  // add a click event listener to the div
+  myDiv5.addEventListener('click', function() {
+    // specify the action to take when the div is clicked
+    console.log('Div 5 was clicked!');
+
+    // COPIAR ISTO???
+    if(flowController.player1Turn == true && myDiv5.innerHTML != "X" && myDiv5.innerHTML != "O"){
+      myDiv5.innerHTML = "X";    
+    }else if(flowController.player1Turn == false && myDiv5.innerHTML != "X" && myDiv5.innerHTML != "O"){
+      myDiv5.innerHTML = "O";    
+    }else{       
+      //FIX NOJENTO - PQ Vai Mudar outra Vez
+      flowController.player1Turn = !flowController.player1Turn; 
+    }
+
+    console.log(`Player 1 turn: ${flowController.player1Turn}`);
+    dashBoard.changeBoard(5, flowController);
+    flowController.checkWinConditions(dashBoard);
+    console.log(dashBoard.board);
+    console.log("-----------------------------------");
+  });
+
+  // add a click event listener to the div
+  myDiv6.addEventListener('click', function() {
+    // specify the action to take when the div is clicked
+    console.log('Div 6 was clicked!');
+
+    // COPIAR ISTO???
+    if(flowController.player1Turn == true && myDiv6.innerHTML != "X" && myDiv6.innerHTML != "O"){
+      myDiv6.innerHTML = "X";    
+    }else if(flowController.player1Turn == false && myDiv6.innerHTML != "X" && myDiv6.innerHTML != "O"){
+      myDiv6.innerHTML = "O";    
+    }else{       
+      //FIX NOJENTO - PQ Vai Mudar outra Vez
+      flowController.player1Turn = !flowController.player1Turn; 
+    }
+
+    console.log(`Player 1 turn: ${flowController.player1Turn}`);
+    dashBoard.changeBoard(6, flowController);
+    flowController.checkWinConditions(dashBoard);
+    console.log(dashBoard.board);
+    console.log("-----------------------------------");
+  });
+
+  // add a click event listener to the div
+  myDiv7.addEventListener('click', function() {
+    // specify the action to take when the div is clicked
+    console.log('Div 7 was clicked!');
+
+    // COPIAR ISTO???
+    if(flowController.player1Turn == true && myDiv7.innerHTML != "X" && myDiv7.innerHTML != "O"){
+      myDiv7.innerHTML = "X";    
+    }else if(flowController.player1Turn == false && myDiv7.innerHTML != "X" && myDiv7.innerHTML != "O"){
+      myDiv7.innerHTML = "O";    
+    }else{       
+      //FIX NOJENTO - PQ Vai Mudar outra Vez
+      flowController.player1Turn = !flowController.player1Turn; 
+    }
+
+    console.log(`Player 1 turn: ${flowController.player1Turn}`);
+    dashBoard.changeBoard(7, flowController);
+    flowController.checkWinConditions(dashBoard);
+    console.log(dashBoard.board);
+    console.log("-----------------------------------");
+  });
+
+  // add a click event listener to the div
+  myDiv8.addEventListener('click', function() {
+    // specify the action to take when the div is clicked
+    console.log('Div 8 was clicked!');
+
+    // COPIAR ISTO???
+    if(flowController.player1Turn == true && myDiv8.innerHTML != "X" && myDiv8.innerHTML != "O"){
+      myDiv8.innerHTML = "X";    
+    }else if(flowController.player1Turn == false && myDiv8.innerHTML != "X" && myDiv8.innerHTML != "O"){
+      myDiv8.innerHTML = "O";    
+    }else{       
+      //FIX NOJENTO - PQ Vai Mudar outra Vez
+      flowController.player1Turn = !flowController.player1Turn; 
+    }
+
+    console.log(`Player 1 turn: ${flowController.player1Turn}`);
+    dashBoard.changeBoard(8, flowController);
+    flowController.checkWinConditions(dashBoard);
+    console.log(dashBoard.board);
+    console.log("-----------------------------------");
+  });
+}
+
+domManipulator();
 dashBoard = new DashBoard();
 flowController = new FlowController();
-
-
-console.log(dashBoard.board);
-
-
-const myDiv0 = document.querySelector('#div0');
-const myDiv1 = document.querySelector('#div1');
-const myDiv2 = document.querySelector('#div2');
-const myDiv3 = document.querySelector('#div3');
-const myDiv4 = document.querySelector('#div4');
-const myDiv5 = document.querySelector('#div5');
-const myDiv6 = document.querySelector('#div6');
-const myDiv7 = document.querySelector('#div7');
-const myDiv8 = document.querySelector('#div8');
-
-// add a click event listener to the div
-myDiv0.addEventListener('click', function() {
-  // specify the action to take when the div is clicked
-  console.log('Div 0 was clicked!');
-
-  // COPIAR ISTO???
-  if(flowController.player1Turn == true && myDiv0.innerHTML != "X" && myDiv0.innerHTML != "O"){
-    myDiv0.innerHTML = "X";    
-  }else if(flowController.player1Turn == false && myDiv0.innerHTML != "X" && myDiv0.innerHTML != "O"){
-    myDiv0.innerHTML = "O";    
-  }else{         
-    //FIX NOJENTO - PQ Vai Mudar outra Vez
-    flowController.player1Turn = !flowController.player1Turn;
-  }
-  
-  console.log(`Player 1 turn: ${flowController.player1Turn}`);
-  dashBoard.changeBoard(0, flowController);
-  flowController.checkWinConditions(dashBoard);
-  console.log(dashBoard.board);
-  console.log("-----------------------------------");
-});
-
-// add a click event listener to the div
-myDiv1.addEventListener('click', function() {
-  // specify the action to take when the div is clicked
-  console.log('Div 1 was clicked!');
-
-  // COPIAR ISTO???
-  if(flowController.player1Turn == true && myDiv1.innerHTML != "X" && myDiv1.innerHTML != "O"){
-    myDiv1.innerHTML = "X";    
-  }else if(flowController.player1Turn == false && myDiv1.innerHTML != "X" && myDiv1.innerHTML != "O"){
-    myDiv1.innerHTML = "O";    
-  }else{       
-    //FIX NOJENTO - PQ Vai Mudar outra Vez
-    flowController.player1Turn = !flowController.player1Turn; 
-  }  
-
-  console.log(`Player 1 turn: ${flowController.player1Turn}`);
-  dashBoard.changeBoard(1, flowController);
-  flowController.checkWinConditions(dashBoard);
-  console.log(dashBoard.board);
-  console.log("-----------------------------------");
-});
-
-// add a click event listener to the div
-myDiv2.addEventListener('click', function() {
-  // specify the action to take when the div is clicked
-  console.log('Div 2 was clicked!');
-
-  // COPIAR ISTO???
-  if(flowController.player1Turn == true && myDiv2.innerHTML != "X" && myDiv2.innerHTML != "O"){
-    myDiv2.innerHTML = "X";    
-  }else if(flowController.player1Turn == false && myDiv2.innerHTML != "X" && myDiv2.innerHTML != "O"){
-    myDiv2.innerHTML = "O";    
-  }else{       
-    //FIX NOJENTO - PQ Vai Mudar outra Vez
-    flowController.player1Turn = !flowController.player1Turn; 
-  }
-
-  console.log(`Player 1 turn: ${flowController.player1Turn}`);
-  dashBoard.changeBoard(2, flowController);
-  flowController.checkWinConditions(dashBoard);
-  console.log(dashBoard.board);
-  console.log("-----------------------------------");
-});
-
-// add a click event listener to the div
-myDiv3.addEventListener('click', function() {
-  // specify the action to take when the div is clicked
-  console.log('Div 3 was clicked!');
-
-  // COPIAR ISTO???
-  if(flowController.player1Turn == true && myDiv3.innerHTML != "X" && myDiv3.innerHTML != "O"){
-    myDiv3.innerHTML = "X";    
-  }else if(flowController.player1Turn == false && myDiv3.innerHTML != "X" && myDiv3.innerHTML != "O"){
-    myDiv3.innerHTML = "O";    
-  }else{       
-    //FIX NOJENTO - PQ Vai Mudar outra Vez
-    flowController.player1Turn = !flowController.player1Turn; 
-  }
-
-  console.log(`Player 1 turn: ${flowController.player1Turn}`);
-  dashBoard.changeBoard(3, flowController);
-  flowController.checkWinConditions(dashBoard);
-  console.log(dashBoard.board);
-  console.log("-----------------------------------");
-});
-
-// add a click event listener to the div
-myDiv4.addEventListener('click', function() {
-  // specify the action to take when the div is clicked
-  console.log('Div 4 was clicked!');
-
-  // COPIAR ISTO???
-  if(flowController.player1Turn == true && myDiv4.innerHTML != "X" && myDiv4.innerHTML != "O"){
-    myDiv4.innerHTML = "X";    
-  }else if(flowController.player1Turn == false && myDiv4.innerHTML != "X" && myDiv4.innerHTML != "O"){
-    myDiv4.innerHTML = "O";    
-  }else{       
-    //FIX NOJENTO - PQ Vai Mudar outra Vez
-    flowController.player1Turn = !flowController.player1Turn; 
-  }
-
-  console.log(`Player 1 turn: ${flowController.player1Turn}`);
-  dashBoard.changeBoard(4, flowController);
-  flowController.checkWinConditions(dashBoard);
-  console.log(dashBoard.board);
-  console.log("-----------------------------------");
-});
-
-// add a click event listener to the div
-myDiv5.addEventListener('click', function() {
-  // specify the action to take when the div is clicked
-  console.log('Div 5 was clicked!');
-
-  // COPIAR ISTO???
-  if(flowController.player1Turn == true && myDiv5.innerHTML != "X" && myDiv5.innerHTML != "O"){
-    myDiv5.innerHTML = "X";    
-  }else if(flowController.player1Turn == false && myDiv5.innerHTML != "X" && myDiv5.innerHTML != "O"){
-    myDiv5.innerHTML = "O";    
-  }else{       
-    //FIX NOJENTO - PQ Vai Mudar outra Vez
-    flowController.player1Turn = !flowController.player1Turn; 
-  }
-
-  console.log(`Player 1 turn: ${flowController.player1Turn}`);
-  dashBoard.changeBoard(5, flowController);
-  flowController.checkWinConditions(dashBoard);
-  console.log(dashBoard.board);
-  console.log("-----------------------------------");
-});
-
-// add a click event listener to the div
-myDiv6.addEventListener('click', function() {
-  // specify the action to take when the div is clicked
-  console.log('Div 6 was clicked!');
-
-  // COPIAR ISTO???
-  if(flowController.player1Turn == true && myDiv6.innerHTML != "X" && myDiv6.innerHTML != "O"){
-    myDiv6.innerHTML = "X";    
-  }else if(flowController.player1Turn == false && myDiv6.innerHTML != "X" && myDiv6.innerHTML != "O"){
-    myDiv6.innerHTML = "O";    
-  }else{       
-    //FIX NOJENTO - PQ Vai Mudar outra Vez
-    flowController.player1Turn = !flowController.player1Turn; 
-  }
-
-  console.log(`Player 1 turn: ${flowController.player1Turn}`);
-  dashBoard.changeBoard(6, flowController);
-  flowController.checkWinConditions(dashBoard);
-  console.log(dashBoard.board);
-  console.log("-----------------------------------");
-});
-
-// add a click event listener to the div
-myDiv7.addEventListener('click', function() {
-  // specify the action to take when the div is clicked
-  console.log('Div 7 was clicked!');
-
-  // COPIAR ISTO???
-  if(flowController.player1Turn == true && myDiv7.innerHTML != "X" && myDiv7.innerHTML != "O"){
-    myDiv7.innerHTML = "X";    
-  }else if(flowController.player1Turn == false && myDiv7.innerHTML != "X" && myDiv7.innerHTML != "O"){
-    myDiv7.innerHTML = "O";    
-  }else{       
-    //FIX NOJENTO - PQ Vai Mudar outra Vez
-    flowController.player1Turn = !flowController.player1Turn; 
-  }
-
-  console.log(`Player 1 turn: ${flowController.player1Turn}`);
-  dashBoard.changeBoard(7, flowController);
-  flowController.checkWinConditions(dashBoard);
-  console.log(dashBoard.board);
-  console.log("-----------------------------------");
-});
-
-// add a click event listener to the div
-myDiv8.addEventListener('click', function() {
-  // specify the action to take when the div is clicked
-  console.log('Div 8 was clicked!');
-
-  // COPIAR ISTO???
-  if(flowController.player1Turn == true && myDiv8.innerHTML != "X" && myDiv8.innerHTML != "O"){
-    myDiv8.innerHTML = "X";    
-  }else if(flowController.player1Turn == false && myDiv8.innerHTML != "X" && myDiv8.innerHTML != "O"){
-    myDiv8.innerHTML = "O";    
-  }else{       
-    //FIX NOJENTO - PQ Vai Mudar outra Vez
-    flowController.player1Turn = !flowController.player1Turn; 
-  }
-
-  console.log(`Player 1 turn: ${flowController.player1Turn}`);
-  dashBoard.changeBoard(8, flowController);
-  flowController.checkWinConditions(dashBoard);
-  console.log(dashBoard.board);
-  console.log("-----------------------------------");
-});
